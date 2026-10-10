@@ -1,5 +1,7 @@
 # pi-vibe-subagent
 
+[![CI](https://github.com/13pass/pi-vibe-subagent/actions/workflows/ci.yml/badge.svg)](https://github.com/13pass/pi-vibe-subagent/actions/workflows/ci.yml)
+
 A [pi](https://github.com/earendil-works/pi) extension that delegates self-contained tasks to [Mistral Vibe](https://github.com/mistralai/mistral-vibe) subagents.
 
 Each subagent runs a separate `vibe -p` process, so it gets its own context window and Vibe's own harness (tools, skills, MCP servers, agent profiles). The parent pi session receives only the final text and a compact log of tool calls, so large intermediate output never enters the parent context.
@@ -20,7 +22,7 @@ pi install npm:pi-vibe-subagent
 From a git repository or a local checkout:
 
 ```bash
-pi install git:github.com/<you>/pi-vibe-subagent
+pi install git:github.com/13pass/pi-vibe-subagent
 pi install /absolute/path/to/pi-vibe-subagent
 ```
 

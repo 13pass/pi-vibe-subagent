@@ -11,6 +11,12 @@
     "mistral",
     "subagent"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13pass/pi-vibe-subagent.git"
+  },
+  "homepage": "https://github.com/13pass/pi-vibe-subagent#readme",
+  "bugs": "https://github.com/13pass/pi-vibe-subagent/issues",
   "pi": {
     "extensions": [
       "./src/extension.ts"
