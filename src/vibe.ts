@@ -264,7 +264,7 @@ export async function runSingle(
 	let timeoutTimer: ReturnType<typeof setTimeout> | undefined;
 
 	const exitCode = await new Promise<number>((resolve) => {
-		const proc = spawn("vibe", buildArgs(defaults, spec), {
+		const proc = spawn(process.env.VIBE_BIN ?? "vibe", buildArgs(defaults, spec), {
 			cwd: workdir,
 			shell: false,
 			stdio: ["ignore", "pipe", "pipe"],
